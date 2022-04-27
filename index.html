@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mateusz Matejuk - Web Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Saira+Condensed:400,700|Saira:300,400&amp;subset=latin-ext"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="welcome">
+      <p>witaj!</p>
+      <h1>jestem Mateusz Matejuk</h1>
+      <h2>web developer</h2>
+      <button>Zobacz moje portfolio</button>
+    </div>
+  </header>
+
+  <section class="features clearfix">
+    <h1>Tworzę dobre strony internetowe</h1>
+    <div class="feature">
+      <img src="images/services1.png" alt="loga html js i css">
+      <h2>Nowoczesne i zgodne z aktualnymi standardami</h2>
+    </div>
+    <div class="feature">
+      <img src="images/services2.png" alt="loga html js i css">
+      <h2>Zoptymalizowanie pod kątem wyszukiwarek internetowych</h2>
+    </div>
+    <div class="feature">
+      <img src="images/services3.png" alt="loga html js i css">
+      <h2>Świetnie wyglądające na urzedziach mobilnych</h2>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <h1>Projekty, z których jestem dumny</h1>
+    <div class="project clearfix">
+      <div class="web">
+        <img src="images/portfolio1.jpg" alt="portfolio przykład 1">
+      </div>
+      <div class="about">
+        <h2>To Do List</h2>
+        <p>Lista zadań, które można dodawać, usuwać lub też wyszukać czy zadanie jest na liście. Jednocześnie pokazywana
+          jest ilość zadań do wykonania. Projekt w oparciu o tablicę.</p>
+      </div>
+    </div>
+    <div class="project clearfix">
+      <div class="web">
+        <img src="images/portfolio2.jpg" alt="portfolio przykład 2">
+      </div>
+      <div class="about">
+        <h2>one-armed bandit</h2>
+        <p>Gra losowa: wygrywa się w dwóch przypadkach: gdy wszystkie kolory będą takie same lub gdy wszystie będą
+          różne. Projekt w oparciu o OOP. Jeszcze nie jestem w tym bardzo dobry, a przy tym projekcie wspierałem się
+          pomocą.
+        </p>
+      </div>
+    </div>
+    <div class="project clearfix">
+      <div class="web">
+        <img src="images/portfolio3.jpg" alt="portfolio przykład 3">
+      </div>
+      <div class="about">
+        <h2>Własna strona</h2>
+        <p>Oczywiście strona o moich dokonaniach. Tworząc ten projekt skupiłem się głównie na responywności, tak by
+          dobrze się wyświetlała na różnych urządzeniach.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="slogan">
+    <div class="bg">
+      <h1>Moje życiowe motto</h1>
+      <p class="text">Żyj tak, jakbyś miał umrzeć jutro.<br>
+        Ucz się tak, jakbyś miał żyć wiecznie.
+      </p>
+      <p class="author">Gandhi Mahatma</p>
+    </div>
+  </section>
+
+  <section class="hobby clearfix">
+    <h1>W wolnym czasie uwielbiam</h1>
+    <div class="item">
+      <p>Chodzić po górach</p>
+    </div>
+    <div class="item">
+      <p>Patrzeć wysoko</p>
+    </div>
+    <div class="item">
+      <p>Zmieniać świat</p>
+    </div>
+    <div class="item">
+      <p>Jeść owoce i warzywa</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h1>Skontaktuj się ze mną</h1>
+    <div class="wrap clearfix">
+      <form>
+        <input type="text" placeholder="Twoje imię">
+        <input type="text" placeholder="Email">
+        <textarea placeholder="Twoja wiadomość"></textarea>
+        <button>Wyślij wiadomość</button>
+      </form>
+      <div class="socials">
+        <div class="social clearfix"><img src="images/contact1.png"
+            alt="kontakt"><span>mateuszmatejuk1989@gmail.com</span></div>
+        <div class="social clearfix"><img src="images/contact2.png" alt="kontakt"><span>697-874-110</span></div>
+        <div class="social clearfix"><img src="images/contact3.png" alt="kontakt"><span>Mateusz Matejuk</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>&copy; Mateusz Matejuk</footer>
+
+  <script>
+    document.querySelector('header button').addEventListener('click', function () {
+      document.querySelector('.portfolio').scrollIntoView({
+        behavior: "smooth"
+      });
+    })
+  </script>
+</body>
+
+</html>
